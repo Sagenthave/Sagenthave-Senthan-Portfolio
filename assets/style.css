@@ -1,12 +1,39 @@
-/*Main Header Formatting*/
+/*MAIN HEADER FORMATTING*/
 .main-header {
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
     background: rgb(19, 89, 90);
 }
 
+.main-header h1 {
+    justify-content: center;
+    color: rgb(238, 206, 179); 
+    font-family: serif;
+}
+
+/*NAVIGATION IN THE HEADER FORMATTING*/
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.navigation-selector {
+    width:300px;
+    height: 30px;
+    margin: 20px;
+    border: 3px solid green;
+    color:rgb(19, 89, 90);
+    background-color:rgb(238, 206, 179);
+    font-family: serif;
+    font-size:x-large;
+    text-align: center; 
+}
+
+/*BODY SECTION FOR PROJECTS*/
 .card {
     padding: 15px;
     text-align: center;
@@ -21,31 +48,21 @@
     font-weight: bold;
 }
 
-.main-header h1 {
-    justify-content: center;
-    color: rgb(238, 206, 179); 
-    font-family: serif;
-}
-
+/*FORMATTING FOR ASIDE AND IMAGE*/
 aside {
-    float: right
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: azure;
+    padding: 50px;
+    margin-inline: 10%;
+    margin-top:10px;
     text-align: center;
+    border-style: solid;
+    float:left;
 }
 
-.box {
-    width:300px;
-    height: 30px;
-    margin: 20px;
-    border: 3px solid green;
-    color:rgb(19, 89, 90);
-    background-color:rgb(238, 206, 179);
-    font-family: serif;
-    font-size:x-large;
-    text-align: center; 
+/*ID PHOTO IMAGE FORMATTING*/
+.ID {
+    flex-wrap: wrap;
+    border-radius: 4px;
+    width: 400px;
+    margin-top: 10px;
 }
