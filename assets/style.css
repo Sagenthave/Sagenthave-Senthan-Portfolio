@@ -5,6 +5,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    background-image: url(./Images/background.jpg);
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 }
 
 a {
-    color: aliceblue;
+    color: rgb(210, 179, 223);
     text-decoration: none;
 }
 
@@ -51,7 +52,7 @@ main {
     border-width: 1px;
     padding-bottom: 10px;
     width: 100%;
-    background-color: aliceblue;
+    margin: 10px;
 }
 .me header {
     text-align: center;
@@ -59,29 +60,40 @@ main {
     font-size: x-large;
 }
 
-.photo {
-    border-radius: 4px;
-    width: 100px;
-    margin-top: 10px;
+.me img {
+    border-radius: 50%;
+    margin-left: -25%;
+    width: 20%;
+    margin: 20px;
 }
 
 .me p {
     text-align: center;
-    margin-top: 0%;
-    margin-bottom: 1%;
+    margin: 10px;
     padding-top: 3%;
 }
 
+.sub-sections {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.sub-sections header {
+    text-align: center;
+}
+
 .main-card {
+    background-image: url(./Images/Horiseon.png);
     border-style: solid;
     border-width: 1px;
     padding: 10px;
     float: left;
     width: 100%;
     height: 300px;
-    background-color: aliceblue;
+    margin: 10px;
 }
-
 .main-card p {
     text-align: center;
 }
@@ -92,12 +104,14 @@ main {
 }
 
 .card {
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-style: solid;
     border-width: 1px;
     padding: 10px;
     float: left;
     width: 25%;
-    background-color: aliceblue;
+    background-image: url(./Images/About-Me-Picture.jpg);
 }
 
 .card :hover {
@@ -125,4 +139,14 @@ main {
 
 .card p {
     text-align: center;
+}
+
+.contact-card {
+    border-width: 1px;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    background-color: aliceblue;
 }
