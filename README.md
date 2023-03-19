@@ -7,6 +7,10 @@ This purpose of this project was to create a porfolio containing work we have fi
 ![screenshot](/assets/Images/portfolio_snapshot.png)
 
 # Credits
+
+## Background Image 
+https://cdn.dribbble.com/users/1583884/screenshots/17868785/rm281-adj-067_4x.jpg 
+
 ## User Image 
 
 https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
