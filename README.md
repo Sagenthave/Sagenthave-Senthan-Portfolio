@@ -28,6 +28,7 @@ https://img.freepik.com/free-vector/hand-painted-watercolor-sky-cloud-background
 ## Resources Used
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://developer.mozilla.org/en-US/
+- https://www.w3schools.com/css/default.asp
 - Module 02: Advanced CSS
 
 # Deployed Application
