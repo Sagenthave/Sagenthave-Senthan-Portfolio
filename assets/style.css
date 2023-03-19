@@ -1,233 +1,205 @@
 * {
-    box-sizing:border-box;
+   box-sizing: border-box; 
 }
+
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    background-color: rgb(244, 240, 255);
+    background-image:url(./Images/background.webp);
 }
 
-/*All Header Elements will following this formatting*/
-header {
-    padding: 10px;
+/* Main header formatting */
+.main-header {
+    padding: 20px;
     text-align: left;
-    background-color: rgb(9, 9, 49);
-    color: white;
+    background-color: rgb(20, 20, 57);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*For the main header at the top of the page fomatting*/
-.main-header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.main-header h1 {
+    color: white;
 }
 
-/*For the navigation bar located at the top of the page */
-.main-header nav {
-    padding-top: 1px;
-    margin-right: 20px;
+.main-header img {
+    display: block;
+    float: right;
+    width:100px;
+    border-radius: 50%;
+}
+
+/* Navigation Formatting */
+nav {
+    display: flex;
+    background-color: rgb(58, 58, 104);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
-.main-header nav ul {
-    list-style-type: none;
-}
-
-.main-header nav ul li {
-    display: inline-block;
-    padding-right: 50px;
-}
-
 a {
     color: rgb(210, 179, 223);
+    padding: 14px 30px;
     text-decoration: none;
 }
 
-/* Aside for Projects/Upcoming Projects/and Contact Info */
-aside {
-    flex: 1;
-    padding: 50px;
-    text-align: center;
-    float: left;
-    padding: 30px;
-    border-radius: 200px;
-    margin-right: 10px;
+
+/* About Me Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.container h1 {
+    font-size:xx-large;
+    padding: 20px;
     border-right: solid;
 }
 
-@media screen and (max-width:1080px) {
-    aside {
+.container p {
+    flex-wrap: wrap;
+    border: solid;
+    border-width: 2px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .container h1 {
         border-right: none;
     }
+    h1 {
+        border-bottom: solid;
+    }
 }
 
-/* Main section starting from the about me section down to the contact info  */
-main {
+/* Project Section */
+.container-two {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%;
-}
-.me {
-    border-style: none;
-    border-width: 1px;
-    padding-bottom: 10px;
-    width: 100%;
-    margin: 10px;
+    justify-content: space-between;
+    grid-template-rows: 100px;
+    margin: 50px;
 }
 
-.me header {
-    text-align: center;
-    padding-bottom: 1%;
-    font-size: x-large;
+.container-two h1 {
+    font-size:xx-large;
+    padding: 30px;
+    border-right: solid;
 }
 
-.me img {
-    border-radius: 50%;
-    width: 20%;
-    margin: 20px;
+@media screen and (max-width: 992px) {
+    .container-two h1 {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: solid;
+    }
 }
 
-.me p {
-    text-align: center;
-    margin: 10px;
-    padding-top: 1%;
-}
-
-/* sub-sections in diving the groups */
-.sub-sections {
-    width: 100%;
-    height: 20px;
-    margin-bottom: 30px;
-    font-size: x-large;
-}
-
-.sub-sections header {
-    text-align: center;
-}
-
-/* main-card is for the horiseon project. This format is seperate from the other cards 
-because it is the only one with a project attached */
-.main-card {
-    border-width: 1px;
-    padding: 10px;
-    float: left;
-    width: 100%;
-    height: 400px;
-    margin: 10px;
-    margin-bottom: 20px;
-}
-
-.main-card header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.responsive {
+.screenshot {
     display: block;
-    max-width: 1100px;
-    height: auto;
-    float: right;
-    width: 100%;
-    border-width: 10px;
+    width: 800px;
+    height: 350px;
 }
 
+.screenshot:hover {
+    transform: scale(1.1);
+    transition: scale(.5s);
+    opacity: 60%;
+}
 
+@media screen and (max-width: 992px) {
+    .screenshot {
+        width: 100%;
+        height: auto;
+    }
+}
 
-/* .main-card aside {
-    margin-right: 10px;
+.card {
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(20, 20, 57);
+    color: white;
+}
+
+/* .container-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.container-three h1 {
+    font-size:xx-large;
+    padding: 15px;
     border-right: solid;
 } */
 
+/* Upcoming Projects Section */
 
-* {
-    box-sizing: border-box;
-}
-
-* img {
-    overflow-clip-margin: content-box;
-}
-
-@media screen and (max-width:814px) {
-    .responsive {
-        max-width: 800px;
-        height: auto;
-    }
-    
-}
-
-/* Allows image in the horiseon project to enlarge when cruser is hovering over it */
-.main-card :hover {
-    transform: scale(1.1);
-    transition: scale(.5s);
-}
-
-/*Size for medium size screens such as laptops*/
-@media screen and (min-width: 814px) {
-    .card {
-       max-width:50%;
-    }
-}
-
-/*Size for small screens such as smart phonts*/
-@media screen and (max-width: 768px) {
-    .card {
-      width: 100%;
-    }
-  }
-
-.card header {
-    padding: 20px;
-    text-align: center;
-}
-
-/* .card {
-    padding: 15px;
-    text-align: center;
-    border-style: none;
-    background-image: url(./Images/About-Me-Picture.jpg);
-    margin-bottom: 10px;
-    padding-top: 10px;
-} */
-
-/* .card header {
-    padding: 25px;
-    font-family: serif;
-    font-size:larger;
-    font-weight: bold;
-}
-.card p {
-    text-align: center;
-} */
-
-/* Placement picture for upcoming projects */
-.responsive2 {
+.container-three {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 400px;
-    height: auto;
-    border: solid;
+    justify-content: space-between;
     margin: 10px;
-    float: right;
 }
-.card :hover {
+
+.container-three h1 {
+    font-size:xx-large;
+    padding: 20px;
+    border-right: solid;
+}
+
+.container-three .photo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 992px) {
+    .container-three h1 {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: solid;
+    }
+}
+
+.photo:hover {
     transform: scale(1.1);
     transition: scale(.5s);
+    opacity: 60%;
 }
 
+  .container-four {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
 
-/* contact card layout */
-/* .contact-card {
-    border-width: 1px;
-    padding: 10px;
-    width: 100%;
-    height: 150px;
-    margin: 10px;
-    text-align: center;
-} */
+.container-four h1 {
+    font-size:xx-large;
+    padding: 30px;
+    border-right: solid;
+}
 
+@media screen and (max-width: 992px) {
+    .container-four h1 {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: solid;
+    }
+}
+
+.container-four h4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: x-large;
+    background-image: url(./Images/background.webp);
+}
