@@ -25,6 +25,11 @@ https://static.vecteezy.com/system/resources/thumbnails/004/515/056/small/waterc
 
 https://img.freepik.com/free-vector/hand-painted-watercolor-sky-cloud-background-with-pastel-colored_41066-3397.jpg
 
+## Resources Used
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://developer.mozilla.org/en-US/
+- Module 02: Advanced CSS
+
 # Deployed Application
 ### GitHub Url: 
 https://github.com/Sagenthave/Sagenthave-Senthan-Portfolio
