@@ -5,7 +5,8 @@
 
 body {
     margin: 0;
-    background-image:url(./Images/background.webp);
+    /* background-image:url(./Images/background.webp); */
+    background-color: ghostwhite;
 }
 
 /* Main header formatting */
@@ -201,5 +202,5 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     font-size: x-large;
-    background-image: url(./Images/background.webp);
+    /* background-image: url(./Images/background.webp); */
 }
